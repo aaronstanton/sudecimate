@@ -135,6 +135,10 @@ int main(int argc, char **argv)
     fputtr(stdout,&tr);
   }
   /******** End of output **********/
+  finish=time(0);
+  elapsed_time=difftime(finish,start);
+  fprintf(stderr,"Total time required: %6.2fs\n", elapsed_time);
+
  return EXIT_SUCCESS;
 }
 
